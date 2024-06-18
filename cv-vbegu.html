@@ -7,17 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Valentina Begu</title>
     <link rel="stylesheet" type="text/css" href="cv-vbegu.css">
-    <script src="cv-vbegu.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="head-menu">
-            <div class="logo">Valentina Begu</div>
+            <div class="header">Valentina Begu</div>
             <div>
                 <ul class="menu">
-                    <li class="lmenu">Home</li>
-                    <li class="lmenu">About me</li>
+                    <li class="lmenu"><a href="#home">Home</a></li>
+                    <li class="lmenu"><a href="#about">About me</a></li>
                     <li class="lmenu">Resume</li>
                     <li class="lmenu">Contacts</li>
                 </ul>
@@ -29,11 +28,38 @@
         <div class="visit-card">
             <img class="photo" src="images\image2-2.jpg">
             <h1>Valentina Begu</h1>
-            <p>QA Tester</p>
+            <p class="carreer">QA Tester & FE Developer</p>
         </div>
     </div>
     <div class="container2">
+        <div class="about-me" id="about">
+            <h2 class="header">About Me</h2>
+            <p>My name is Valentina. I am a QA Engineer.</p>
+            <button class="details" id="moreInfoBtn">Discover More</button>
+            <p class="info" id="moreInfo" style="display: none;">With a solid foundation in Quality Assurance
+                methodologies and hands-on experience in both manual and automated testing, I am excited about the
+                opportunity to contribute to your team.</p>
+        </div>
+        <div class="skills">
+            <h2 class="header">Skills:</h2>
+            <div class="blocks">
+                <ul class="list">
+                    <li>Quality Assurance</li>
+                    <li>Test Automation</li>
+                    <li>Manual Testing</li>
+                    <li>API Testing</li>
+                    <li>VCS (GIT)</li>
+                </ul>
+                <ul class="list">
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <script src="cv-vbegu.js"></script>
 </body>
-
 </html>
