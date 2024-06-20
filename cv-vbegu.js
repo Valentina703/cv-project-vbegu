@@ -1,3 +1,22 @@
+const modal = document.getElementById("myModal");
+const openModalBtn = document.getElementById("openContactForm");
+const closeModalBtn = document.getElementById("closeModal");
+
+openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+});
+
+closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if(event.target === modal) {
+    modal.style.display = 'none';
+    }
+});
+
+
 document.getElementById('moreInfoBtn').addEventListener('click', function() {
     let moreInfo = document.getElementById('moreInfo');
     if (moreInfo.style.display === 'none') {
@@ -5,7 +24,7 @@ document.getElementById('moreInfoBtn').addEventListener('click', function() {
         this.textContent = 'Show Less';
     } else {
         moreInfo.style.display = 'none';
-        this.textContent = 'Show More';
+        this.textContent = 'Discover More';
     }
 });
 

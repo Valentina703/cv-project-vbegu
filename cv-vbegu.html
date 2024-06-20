@@ -17,11 +17,22 @@
                 <ul class="menu">
                     <li class="lmenu"><a href="#home">Home</a></li>
                     <li class="lmenu"><a href="#about">About me</a></li>
-                    <li class="lmenu">Resume</li>
-                    <li class="lmenu">Contacts</li>
+                    <li class="lmenu"><a href="#resume">Resume</a></li>
+                    <li class="lmenu"><a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
-            <button class="contact">Contact me</button>
+            <button id="openContactForm" class="contact">Contact me</button>
+            <div id="myModal" class="modal">
+                <span id="closeModal" class="close-btn">&times;</span>
+                <div class="modal-content">
+                    <form id="contactForm" class="form">
+                        <input type="text" placeholder="Your name:" required>
+                        <input type="email" placeholder="Email:" required>
+                        <input type="tel" placeholder="Phone:" required>
+                        <input type="submit" value="Get In Touch">
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <div class="container">
