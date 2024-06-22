@@ -28,7 +28,7 @@
                     <form id="contactForm" class="form">
                         <input type="text" placeholder="Your name:" required>
                         <input type="email" placeholder="Email:" required>
-                        <input type="tel" placeholder="Phone:" required>
+                        <input type="tel" placeholder="Phone:" pattern="\+\d{11}">
                         <input type="submit" value="Get In Touch">
                     </form>
                 </div>
@@ -38,12 +38,12 @@
     <div class="container">
         <div class="visit-card">
             <img class="photo" src="images\image2-2.jpg">
-            <h1>Valentina Begu</h1>
+            <h1 class="name">Valentina Begu</h1>
             <p class="carreer">QA Tester & FE Developer</p>
         </div>
     </div>
-    <div class="container2">
-        <div class="about-me" id="about">
+    <div class="container2" id="about">
+        <div class="about-me">
             <h2 class="header">About Me</h2>
             <p>My name is Valentina. I am a QA Engineer.</p>
             <button class="details" id="moreInfoBtn">Discover More</button>
@@ -71,6 +71,21 @@
             </div>
         </div>
     </div>
+    <div class="container3" id="resume">
+        <div class="studies">
+            <div class="block one">
+                <div class="diploma one"><img src="images\QA Begu Valentina.png"></div>
+                <div class="diploma two"><img src="images\QA Automation Valentina Begu.png"></div>
+                <div class="diploma three"><img src="images\SQL Begu Valentina.png"></div>
+            </div>
+            <div class="block two">
+                <div class="diploma four"><img src="images/Java Valentina Begu.png"></div>
+                <div class="diploma five"><img src="images\begu_valentina-page-001.jpg"></div>
+                <div class="diploma six"><span class="text"><b>Coming soon...</b></span></div>
+            </div>
+        </div>
+    </div>
     <script src="cv-vbegu.js"></script>
 </body>
+
 </html>
